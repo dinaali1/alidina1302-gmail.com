@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-body">
+      <h4 class="card-title">Login</h4>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="row">
+          <div class="">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" value="" formControlName="email">
+            </div>
+          </div>
+          <div class="">
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" value="" formControlName="password">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn btn-info btn-fill" type="submit">Sign in</button>
+        </div>
+      </form>
+    </div>
+    <div class="card-footer text-muted">
+      <p>Not a member?
+        <a [routerLink]="['/signup']">Register</a>
+      </p>
+    </div>
+  </div>
+</div>

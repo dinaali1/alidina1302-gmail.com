@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-body">
+      <h4 class="card-title">Sign Up</h4>
+      <form [formGroup]="signupForm" (ngSubmit)="signup()">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 col-xs-6 col-6">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="First Name" value="" formControlName="firstName">
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-6 col-6">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Last Name" value="" formControlName="lastName">
+            </div>
+          </div>
+        </div>
+        <div class="row one-input">
+          <div class="col-12">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" value="" formControlName="email">
+            </div>
+          </div>
+        </div>
+        <div class="row one-input">
+          <div class="col-12">
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" value="" formControlName="password">
+            </div>
+          </div>
+        </div>
+        <div class="row one-input">
+          <div class="col-12">
+            <div class="form-group">
+              <select class="custom-select form-control" formControlName="role">
+                <option value="agent">agent</option>
+                <option value="student" selected>student</option>
+                <option value="professor">professor</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <button class="btn btn-info btn-fill" type="submit">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
