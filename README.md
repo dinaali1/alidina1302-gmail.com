@@ -2,11 +2,11 @@
 This project describes the management of a department of a faculty
 
 ## Installing
-####Backend: Spring Boot
+#### Backend: Spring Boot
 
  install java and maven 
 
-####Frontend: Angular 8
+#### Frontend: Angular 8
 ```
 npm install
 ```
