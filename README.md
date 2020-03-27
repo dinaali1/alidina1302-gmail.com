@@ -1,16 +1,13 @@
-# Department management
-This project describes the rental management of a car rental agency
+ install java and maven 
 
-## Installing
-#### Backend: NodeJS
 #### Frontend: Angular 8
 ```
 npm install
 ```
 ## Running the project
-#### Backend:
+#### Backend: 
 ```
-nodemon server.js
+mvn spring-boot:run
 ```
 #### Frontend: 
 ```
