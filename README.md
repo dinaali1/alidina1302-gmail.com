@@ -8,7 +8,7 @@ This project describes the rental management of a car rental agency
 npm install
 ```
 ## Running the project
-#### Backend: mvn
+#### Backend:
 ```
 nodemon server.js
 ```
